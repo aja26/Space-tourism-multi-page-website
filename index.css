@@ -211,3 +211,38 @@ select{
     font-weight: 700;
     margin-right:0.5rem;
 }
+
+/* --------------- */
+/* Components */
+/* --------------- */
+
+.large-button{
+    position: relative;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    padding: 3em;
+    aspect-ratio: 1;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.large-button::after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    background-color: hsl(var(--clr-white) / .15);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear, transform 0.5s ease-in-out;
+}
+
+.large-button:hover::after,
+.large-button:focus::after
+{
+    opacity: 1;
+    transform: scale(1.5);
+}
