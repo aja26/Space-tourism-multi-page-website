@@ -1,248 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="container flow">
+    <h1 class="uppercase text-accent letter-spacing-1 fs-600 ff-sans-cond">Design System</h1>
 
-/* --------------- */
-/* Custom Properties */
-/* --------------- */
+    <section id="colours" style="margin: 4rem 0;">
+            <h2 class="numbered-title"><span>01</span> colours</h2>
+            <div class="flex">
+                <div class="flex1 flow">
+                    <div style="padding: 3rem 1rem 1rem; border: 1px solid white;">
+                        #0B0D17
+                    </div>
+                    <p> <span class="text-accent">RGB</span> 11, 13, 23</p>
+                    <p> <span class="text-accent">HSL</span> 230%, 35%, 7%</p>
+                </div>
 
-:root{
+                <div class="flex1 flow">
+                    <div class="bg-accent text-dark" style="padding: 3rem 1rem 1rem; border: 1px solid white;">
+                        #0B0D17
+                    </div>
+                    <p> <span class="text-accent">RGB</span> 11, 13, 23</p>
+                    <p> <span class="text-accent">HSL</span> 230%, 35%, 7%</p>
+                </div>
 
-    /* colours */
-    --clr-dark: 230 35% 7%;
-    --clr-light: 231 77% 90%;
-    --clr-white: 0 0% 100%;
+                <div class="flex1 flow">
+                    <div class="bg-white text-dark" style="padding: 3rem 1rem 1rem; border: 1px solid white;">
+                        #0B0D17
+                    </div>
+                    <p> <span class="text-accent">RGB</span> 11, 13, 23</p>
+                    <p> <span class="text-accent">HSL</span> 230%, 35%, 7%</p>
+                </div>
+            </div>
+    </section>
 
-    /* fonts */
-    --fs-900: 9.375rem;
-    --fs-800: 6.25rem;
-    --fs-700: 3.5rem;
-    --fs-600: 2rem;
-    --fs-500: 1.75rem;
-    --fs-400: 1.125rem;
-    --fs-300: 1rem;
-    --fs-200: 0.875rem;
+    <section class="flow" id="typography" style="margin: 4rem 0;">
+            <h2 class="numbered-title"><span>02</span> typography</h2>
+            <div class="flex">
+                <div class="flex1 flow" style="--flow-space:4rem;">
+                    <div>
+                        <p class="text-accent">Heading 1 - Bellefair Regular - 150px</p>
+                        <p class="fs-900 ff-serif uppercase">Earth</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Heading 2 - Bellefair Regular - 100px</p>
+                        <p class="fs-800 ff-serif uppercase">Venus</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Heading 3 - Bellefair Regular - 56px</p>
+                        <p class="fs-700 ff-serif uppercase">Jupiter & Saturn</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Heading 4 - Bellefair Regular - 32px</p>
+                        <p class="fs-600 ff-seiff uppercase">Uranus, Neptune & Pluto</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character Space</p>
+                        <p class="fs-500 ff-sans-cond text-accent uppercase letter-spacing-1">So you want to travel to space</p>
+                    </div>
+                </div>
 
-    /* font-families */
-    --ff-serif: "Bellefair", serif;
-    --ff-sans-cond: "Barlow Condensed", sans-serif;
-    --ff-sans-normal: "Barlow", sans-serif;
-}
+                <div class="flex1 flow" style="--flow-space:4rem;">
+                    <div>
+                        <p class="text-accent">Subheading 1 - Bellefair Regular - 28px</p>
+                        <p class="fs-500 ff-seiff uppercase">384, 400 km</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character Space </p>
+                        <p class="fs-200 uppercase ff-sans-cond letter-spacing-3">Avg. Distance</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Nav Text - Barlow Condensed Regular - 16px - 2.7 Character Space</p>
+                        <p class="fs-300 uppercase ff-sans-cond letter-spacing-2">Europa</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Body Text</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vitae nisi nulla qui, quibusdam perspiciatis tempora, omnis minima quidem ducimus soluta veniam dolorum doloribus nam, officia dignissimos odio ex harum corrupti enim id inventore. Ducimus labore illo repudiandae officiis magni voluptas autem facilis quaerat voluptatem. Aperiam qui modi corrupti quo recusandae sed, doloribus distinctio nesciunt ipsum dolore necessitatibus beatae ut cum consectetur quam adipisci voluptatibus voluptatum? Incidunt ullam aperiam rem dignissimos? Incidunt esse ut sit pariatur tempore. Asperiores perspiciatis quod mollitia, aperiam nisi quo neque at? Maiores, modi voluptatum incidunt ab expedita repudiandae accusantium officia! Illum ratione beatae deleniti voluptatibus.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
 
-/* --------------- */
-/* Reset */
-/* --------------- */
+    <section class="flow" id="interactive-elements">
+            <h2 class="numbered-title"><span>03</span>interactive elements</h2>
 
-/* https://piccalil.li/blog/a-modern-css-reset/ */
+            <!-- navigation -->
+            <div></div>
 
-/* Box Sizing */
+            <div class="flex">
+                <div style="margin-top: 5rem;">
+                    <!-- explore button -->
+                    <a href="#" class="large-button uppercase fs-600 ff-serif bg-white text-dark">Explore</a>
+                </div>
+                <div style="margin-bottom:20vh;"></div>
+            </div>
+    </section>
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
-/* Reset margins */
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-main,
-section, 
-header,
-footer,
-img,
-picture,
-figure{
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p{
-    font-weight: 400;
-}
-
-/* set up the body */
-
-body{
-    font-family: var(--ff-sans-normal);
-    font-size: var(--fs-400);
-    line-height: 1.5;
-    min-height: 100vh;
-    background-color: hsl(var(--clr-dark));
-    color: hsl(var(--clr-white));
-}
-
-/* Make images easier to work with */
-
-img,
-picture{
-    max-width: 100%;
-    display: block;
-}
-
-/* make form elements easier to work with */
-
-input,
-button,
-textarea,
-select{
-    font: inherit;
-}
-
-/* remove animations for people who've turned them off --- Accessibility*/
-
-@media (prefers-reduced-motion: reduce){
-    *,
-    *::before,
-    *::after{
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-
-/* --------------- */
-/* Utility Classes */
-/* --------------- */
-
-.flex{
-    display: flex;
-    gap: var(--gap, 1rem);
-}
-
-.grid{
-    display: grid;
-    gap: var(--gap, 1rem);
-}
-
-/* USE THIS IT'S VERY POWERFUL! */
-.flow > *:where(:not(:first-child)){
-    margin-top: var(--flow-space, 1rem);
-}
-
-.container{
-    padding-inline: 2em;
-    margin-inline: auto;
-    max-width: 80rem;
-}
-
-.sr-only{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
-    border: 0;
-}
-
-.box{
-    background: lightblue;
-    padding: 3rem;
-}
-
-/* Colours */
-
-.bg-dark{ background-color: hsl(var(--clr-dark));}
-.bg-accent{ background-color: hsl(var(--clr-light));}
-.bg-white{ background-color: hsl(var(--clr-white));}
-
-.text-dark{ color: hsl(var(--clr-dark) );}
-.text-accent{ color: hsl(var(--clr-light) );}
-.text-white{ color: hsl(var(--clr-white) );}
-
-.example-component{
-    background-color: hsl(var(--clr-light) / .2);
-}
-
-/* Flex classes */
-
-.flex1{ flex: 1;}
-
-/* Typography */
-
-.ff-serif { font-family: var(--ff-serif);}
-.ff-sans-cond {font-family: var(--ff-sans-cond);}
-.ff-sans-normal {font-family: var(--ff-sans-normal);}
-
-.letter-spacing-1{letter-spacing: 4.75px;}
-.letter-spacing-2{letter-spacing: 2.7px;}
-.letter-spacing-3{letter-spacing: 2.35px;}
-
-.uppercase{ text-transform: uppercase;}
-
-.fs-900 {font-size: var(--fs-900);}
-.fs-800 {font-size: var(--fs-800);}
-.fs-700 {font-size: var(--fs-700);}
-.fs-600 {font-size: var(--fs-600);}
-.fs-500 {font-size: var(--fs-500);}
-.fs-400 {font-size: var(--fs-400);}
-.fs-300 {font-size: var(--fs-300);}
-.fs-200 {font-size: var(--fs-200);}
-
-.fs-900,
-.fs-800,
-.fs-700,
-.fs-600 {
-    line-height: 1.1;
-}
-
-.numbered-title{
-    text-transform: uppercase;
-    font-family: var(--ff-sans-cond);
-    font-size: var(--fs-500);
-    letter-spacing: 4.7px;
-}
-
-.numbered-title span{
-    color: hsl(var(--clr-white) / .25);
-    font-weight: 700;
-    margin-right:0.5rem;
-}
-
-/* --------------- */
-/* Components */
-/* --------------- */
-
-.large-button{
-    position: relative;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    padding: 3em;
-    aspect-ratio: 1;
-    text-decoration: none;
-    z-index: 1;
-}
-
-.large-button::after{
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    background-color: hsl(var(--clr-white) / .15);
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.5s linear, transform 0.5s ease-in-out;
-}
-
-.large-button:hover::after,
-.large-button:focus::after
-{
-    opacity: 1;
-    transform: scale(1.5);
-}
+    
+    </div>    
+    <script src="app.js"></script>
+</body>
+</html>
