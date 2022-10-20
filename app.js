@@ -1,9 +1,24 @@
-let arr = [1,2,3,4,5];
+const primaryNav = document.getElementById('primary-navigation');
+const navBut = document.getElementById('nav-button');
 
-let strings = ['tim', 'tom', 'tinny', 'shaggy']
+navBut.addEventListener('click', () => {
+    const visibility = primaryNav.getAttribute("data-visible");
 
-let arr2 = strings.reduce((acc, next) => {
-    return acc + next;
+    if (visibility === "false") {
+        primaryNav.setAttribute("data-visible", true);
+        navBut.setAttribute('aria-expanded', true)
+    } else {
+        primaryNav.setAttribute("data-visible", false);
+        navBut.setAttribute('aria-expanded', false)
+    }
+
+    console.log(navBut.getAttribute('aria-expanded'));
 })
 
-console.log(arr2);
+
+
+// Easy way
+
+// navBut.addEventListener('click', () => {
+//     primaryNav.classList.toggle('active')
+// })
