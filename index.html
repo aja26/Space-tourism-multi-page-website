@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
+  <script defer src="app.js"></script>
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body class="home">
@@ -14,9 +14,9 @@
     <div>
       <img src="assets/shared/logo.svg" alt="space logo" class="logo">
     </div>
-    <button class="mobile-nav-toggle" aria-controls="primary-navigation"> <span class="sr-only">Menu</span></button>
+    <button id="nav-button" class="mobile-nav-toggle" aria-controls="primary-navigation"> <span class="sr-only">Menu</span></button>
     <nav>
-       <ul id="primary-navigation" class="primary-navigation flex underline-indicators">
+       <ul id="primary-navigation" data-visible="false" class="primary-navigation flex underline-indicators">
           <li class="active"><a class="uppercase letter-spacing-2 text-white ff-sans-cond" href="index.html"><span>00</span>Home</a></li>
           <li><a class="uppercase letter-spacing-2 text-white ff-sans-cond" href="destination.html"><span>01</span>Destination</a></li>
           <li><a class="uppercase letter-spacing-2 text-white ff-sans-cond" href="crew.html"><span>02</span>Crew</a></li>
@@ -37,8 +37,6 @@
       <a href="#" class="large-button uppercase ff-serif text-dark bg-white">Explore</a>
     </div>
   </div>
-
-
 
 </body>
 </html>
