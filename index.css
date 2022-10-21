@@ -186,7 +186,6 @@ select{
     
     .grid-container > *:last-child{
         grid-column: 3;
-
     }
 
     .grid-container--home{
