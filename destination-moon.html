@@ -3,35 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="index.css">
+  <script defer src="app.js"></script>
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body class="destination">
+  <a href="#main" class="skip-to-content">Skip to content</a>
+  <header class="flex primary-header">
+    <div>
+      <img src="assets/shared/logo.svg" alt="space logo" class="logo">
+    </div>
+    <button id="nav-button" class="mobile-nav-toggle" aria-controls="primary-navigation"> <span class="sr-only">Menu</span></button>
+    <nav>
+       <ul id="primary-navigation" data-visible="false" class="primary-navigation flex underline-indicators">
+          <li class="active"><a class="uppercase letter-spacing-2 text-white ff-sans-cond" href="index.html"><span aria-hidden="true">00</span>Home</a></li>
+          <li><a class="uppercase letter-spacing-2 text-white ff-sans-cond" href="destination.html"><span aria-hidden="true">01</span>Destination</a></li>
+          <li><a class="uppercase letter-spacing-2 text-white ff-sans-cond" href="crew.html"><span aria-hidden="true">02</span>Crew</a></li>
+          <li><a class="uppercase letter-spacing-2 text-white ff-sans-cond" href="technology.html"><span aria-hidden="true">03</span>Technology</a></li>
+       </ul>
+    </nav>
+  </header>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <main id="main" class="grid-container grid-container--destination flow">
 
-  01 Pick your destination
+    <h1 class="numbered-title"><span aria-hidden="true">01</span> Pick your destination</h1>
 
-  Moon
-  Mars
-  Europa
-  Titan
+    <img src="assets/destination/image-moon.png" alt="moon-image-destinationpg">
 
-  Moon
+    <div class="tab-list underline-indicators flex" style="margin:0rem 4.5rem;">
+      <button aria-selected="true" class="uppercase text-accent bg-dark ff-sans-cond">Moon</button>
+      <button aria-selected="false" class="uppercase text-accent bg-dark ff-sans-cond">Mars</button>
+      <button aria-selected="false" class="uppercase text-accent bg-dark ff-sans-cond">Europa</button>
+      <button aria-selected="false" class="uppercase text-accent bg-dark ff-sans-cond">Titan</button>
+      
+  </div>
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
+  <article class="destination-info">
+    <h2 class="fs-800 ff-serif uppercase">Moon</h2>
 
-  Avg. distance
-  384,400 km
+    <p class="text-accent">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+    regain perspective and come back refreshed. While you’re there, take in some history 
+    by visiting the Luna 2 and Apollo 11 landing sites.</p> 
 
-  Est. travel time
-  3 days
+    <div class="destination-meta flex">
+      <div>
+        <h3 class="fs-200 uppercase text-accent">Avg. distance</h3>
+        <p class="fs-500 ff-serif uppercase">384,400 km</p> 
+      </div>
+
+      <div>
+        <h3 class="fs-200 uppercase text-accent">Est. travel time</h3>
+        <p class="fs-500 ff-serif uppercase">3 days</p>
+      </div>
+    </div>
+   
+
+  </article>
+
+</main>
 </body>
 </html>
