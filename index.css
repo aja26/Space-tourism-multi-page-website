@@ -718,6 +718,7 @@ body{
 .grid-container--technology > .large-dot-indicators > * {
     padding: 0.5em;
     width: 3.5rem;
+    height: 3.5rem;
 }    
 
 .grid-container--technology > .tech-details{
